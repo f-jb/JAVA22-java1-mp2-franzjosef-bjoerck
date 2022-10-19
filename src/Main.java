@@ -19,7 +19,7 @@ public class Main {
                     currentCustomer.printInventory();
                     System.out.println("Your wallet contains: " + currentCustomer.getCash());
                 }
-                case 3 -> Bank.main(); // Work in Progress
+                case 3 -> Bank.main(currentCustomer); // Work in Progress
 
                 case 9 -> Manager.main();
                 case 0 -> {
