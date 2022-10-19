@@ -5,7 +5,7 @@ class Customer implements Serializable {
     @Serial
     private static final long serialVersionUID = 42L;
     private float cash = 500;
-    private int bankAccount;
+    private double bankAccount;
     private Inventory inventory = new Inventory();
     private int amountOfPurchases = 0;
     private float costOfPurchases = 0;
@@ -40,5 +40,11 @@ class Customer implements Serializable {
 
     private void setCostOfPurchases(float costOfPurchases) {
         this.costOfPurchases += costOfPurchases;
+    }
+    double getBankAccount(){
+        return bankAccount;
+    }
+    void setBankAccount(double bankAccount ){
+        this.bankAccount = bankAccount;
     }
 }
